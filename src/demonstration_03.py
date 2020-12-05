@@ -15,5 +15,10 @@ Notes:
 
 
 def multiply_nums(nums):
-    # Your code here
+    nums_array = nums.split(', ')
+    final_val = 1
+    for num in nums_array:
+        final_val *= int(num)
+    return final_val
 
+print(multiply_nums("2, 2, 8"))

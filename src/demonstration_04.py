@@ -24,5 +24,13 @@ Notes:
 
 
 def emotify(txt):
-    # Your code here
+    txt=txt.replace("smile", ":D")
+    txt=txt.replace("grin", ":)")
+    txt=txt.replace("sad", ":(")
+    txt=txt.replace("mad", ":P")
+    return txt
 
+print(emotify("make me smile"))
+print(emotify("grin"))
+print(emotify("sad"))
+print(emotify("mad"))
